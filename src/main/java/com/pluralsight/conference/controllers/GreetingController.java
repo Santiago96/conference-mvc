@@ -1,4 +1,4 @@
-package controllers;
+package com.pluralsight.conference.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -9,14 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class GreetingController {
 
     @GetMapping("greeting")
-    public String getGreeting(ModelMap modelMap, @RequestParam String message){
-        modelMap.put("message", message);
-        return "greeting";
-    }
-
-    @GetMapping("greeting")
     public String getGreeting(ModelMap modelMap){
-        modelMap.put("message", "Santiago");
+        modelMap.put("message", "Hello Santiago");
         return "greeting";
     }
 }
