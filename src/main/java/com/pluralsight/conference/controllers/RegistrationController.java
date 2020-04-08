@@ -30,6 +30,6 @@ public class RegistrationController {
 
         System.out.println("Name: " + registration.getName());
         System.out.println("ID: " + registration.getId());
-        return "registration";
+        return "redirect: registration";
     }
 }
