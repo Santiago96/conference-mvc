@@ -24,7 +24,7 @@ public class RegistrationController {
     public String addRegistration(@Valid @ModelAttribute("registration") Registration registration, BindingResult bindingResult, ModelMap modelMap){
 
         if(bindingResult.hasErrors()) {
-            modelMap.put("error", "Some errors in the information");
+            modelMap.put("error", bindingResult.getFieldError("name").getDefaultMessage());
             return "registration";
         }
 

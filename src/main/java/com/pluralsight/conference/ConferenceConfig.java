@@ -54,7 +54,7 @@ public class ConferenceConfig implements WebMvcConfigurer {
 
         return bean;
     }
-
+/*
     @Bean
     public ViewResolver thymeleafResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
@@ -82,4 +82,6 @@ public class ConferenceConfig implements WebMvcConfigurer {
 
         return templateEngine;
     }
+
+ */
 }

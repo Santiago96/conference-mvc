@@ -5,8 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 @Getter
@@ -18,6 +16,6 @@ public class Registration {
 
     private long id;
 
-    @NotBlank
+    @NotEmpty(message = "Nombre no puede estar vacio")
     private String name;
 }
